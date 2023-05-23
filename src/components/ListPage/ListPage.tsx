@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { useLocation, useNavigate  } from 'react-router-dom';
 import queryString from 'query-string';
 import { Data } from '../types/types';
@@ -8,7 +8,8 @@ interface ListPageProps {
   data: Data[];
 }
 
-const ListPage: React.FC<ListPageProps> = ({ data }) => {
+// const ListPage: FC<ListPageProps> = ({ data }) => { // тоже работает но мне кажется что плохо читается
+  function ListPage ({ data }: ListPageProps ) {
   const location = useLocation();
   const navigate = useNavigate();
   const queryParams = queryString.parse(location.search); // Разбор строки запроса
