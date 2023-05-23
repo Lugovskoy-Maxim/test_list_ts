@@ -36,7 +36,7 @@ interface ListPageProps {
             }`}
             onClick={() => handleTabChange(index)}
           >
-            {tab.charAt(0).toUpperCase() + tab.slice(1)}
+            {tab.charAt(0).toUpperCase() + tab.slice(1)} {/*Первый символ заглавный*/}
           </li>
         ))}
       </ul>
