@@ -3,7 +3,7 @@ interface Name {
   last: string;
 }
 
-export interface Row {
+export interface Data {
   type: string;
   _id: string;
   amount: string;

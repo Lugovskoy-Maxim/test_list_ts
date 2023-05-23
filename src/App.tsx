@@ -13,7 +13,7 @@ function App() {
         <Link to="/navigator">Приложение</Link>
       </header>
       <Routes>
-        <Route path="/navigator" element={<ListPage rows={data.data} />}></Route>
+        <Route path="/navigator" element={<ListPage data={data.data} />}></Route>
       </Routes>
     </div>
   );
